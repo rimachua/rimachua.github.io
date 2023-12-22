@@ -1,0 +1,40 @@
+a { color:#5D5D9E; } 
+a:visited { color:#5D5D9E; } 
+a:active { color:#5C615E; } 
+a:hover { color:#B2B3B4; } 
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />body { background-color:#FFFFFF; padding:0;  margin: 0; }
+.textstyle1 { text-align:left; }
+#form_7d1752af { position:absolute; left:0%; top:28%; width:100%; background-color:#FFFFFF;  }
+.textstyle2 { text-align:center; }
+#edit_46617e6a { box-sizing: border-box; vertical-align: top; border-radius: 8px 0px 0px 8px; position:relative; display: inline-block; margin:0px -2px 0px 0px;width:50%; height:40px; min-width:200px; max-width:600px; background-color:#FFFFFF; border: 2px solid #B8B8B8; font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#button_4146eb3e { box-sizing: border-box; vertical-align: top; border-radius: 0px 8px 8px 0px; position:relative; display: inline-block; margin:0px 0px 0px -4px;width:100px; height:40px; background-color:#4E6EF2; border-top: none; border-left: none; border-right: none; border-bottom: none; font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+#container_325db47a { position:absolute; left:50%; top:36%; max-width:400px; background:none;  }
+#container_7912be8c { position:absolute; left:0%; top:36%; width:100%; background:none;  }
+#container_552b321a { vertical-align: top; position:relative; display: inline-block; width:69%; min-height:234px; max-width:720px; background:none;  }
+#button_44682097 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_44682097_padding { margin: 10px 20px 10px 20px;display: block;  }
+.textstyle3 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#button_63748a78 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_63748a78_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_3c1faa89 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_3c1faa89_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_401b77b6 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_401b77b6_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_2affc1f2 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_2affc1f2_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_901e8c0 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_901e8c0_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_3f6c1d6e { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_3f6c1d6e_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_28baa5e8 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_28baa5e8_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_1ea2dbfe { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_1ea2dbfe_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_696dd514 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_696dd514_padding { margin: 10px 20px 10px 20px;display: block;  }
+#button_696dd515 { box-sizing: border-box; vertical-align: top; border-radius: 8px; position:relative; display: inline-block; margin:10px; background-color:#F4F4F4; border: 0px solid #DEDEDE;  }
+#button_696dd515_padding { margin: 10px 20px 10px 20px;display: block;  }
+@media only screen and (max-width: 450px)
+{
+		#container_552b321a { width:100%;  }
+}

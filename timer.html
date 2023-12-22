@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>这是个网页</title>
+    </head>
+    <body>
+        <audio id="a" controls src="./Cleverer.mp3"></audio>
+        <input type="text" style="width:50px" id="input_hours" value=""/>小时<input type="text" style="width:50px" id="input_minutes" value=""/>分钟
+        <h1 id="text1"></h1>
+        <h1 id="text2"></h1>
+        <h1 id="text3"></h1>
+
+        
+        
+        <button id="start" onclick="f_countdown('开始计时')">开始</button>
+        <button id="reset" onclick="f_countdown('重置')">取消</button>
+        <button id="afs" onclick="setTimeout('ne()',2000)">xxx</button>
+        
+
+        
+
+
+        <script>
+            function ne(){
+                var ss = window.open("about:blank");
+                ss.close();
+
+            }
+            
+            var countdownminutes = parseInt(document.getElementById("input_minutes").value)
+            var stime = countdownminutes*60*1000
+            setInterval("current_time()",1000);
+
+            function current_time(){
+                var date = new Date();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+
+                m = checktime(m);
+                s = checktime(s);
+
+                
+                document.getElementById("text2").innerHTML = "当前时间：" + h + ":" + m + ":" + s
+            }
+
+            function end_time(){
+                var start = new Date();
+                var date = new Date(start.setMinutes(start.getMinutes() + countdownminutes))
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+
+                m = checktime(m);
+                s = checktime(s);
+
+                
+                document.getElementById("text3").innerHTML = "截止时间：" + h + ":" + m + ":" + s
+            }
+
+            function checktime(i){
+                if (i < 10){
+                    i = "0" + i
+                }
+                return i
+            }
+            
+            function f_countdown(v){
+                countdownminutes = parseInt(document.getElementById("input_minutes").value)
+                stime = countdownminutes*60*1000
+                document.getElementById("text1").innerHTML = stime/1000
+                if (v=="开始计时"){
+                    document.getElementById("start").setAttribute("disabled", true);
+                    timer = setInterval("countdown()",1000);
+                    end_time();
+                    
+                }
+
+                if (v=="重置"){
+                    document.getElementById("start").removeAttribute("disabled");
+
+                    document.getElementById("input_minutes").value = ""
+                    timer = clearInterval(timer)
+                }
+                
+            }
+
+            function countdown() {
+                stime = stime - 1000;
+                document.getElementById("text1").innerHTML = stime/1000;
+                if(stime==0){
+                    document.getElementById("a").play();
+                    f_countdown("重置");
+                    ne()
+                    
+                    
+                }
+            }
+
+
+            
+
+        </script>
+    </body>
+</html>
